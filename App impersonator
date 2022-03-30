@@ -1,0 +1,13 @@
+CREATE TABLE twitter (id INTEGER PRIMARY KEY AUTOINCREMENT, date TEXT, time TEXT, content TEXT, profile_name TEXT);
+
+INSERT INTO twitter (date, time, content, profile_name) VALUES ('2022-03-08', '18:30', 'Trying to learn SQL!', '@sarahg'), ('2022-03-06', '12:00', 'Just landed in LA!', '@sarahg'), ('2022-03-06', '9:00', 'I am so bored', '@gabbyb'), ('2022-03-05', '22:30', 'Just saw The Batman!', '@gabbyb');
+
+SELECT * FROM twitter;
+
+UPDATE twitter SET date = '2022-03-04' WHERE id=3;
+
+SELECT * FROM twitter;
+
+DELETE FROM twitter WHERE id = 3;
+
+SELECT * FROM twitter;
